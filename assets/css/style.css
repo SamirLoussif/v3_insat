@@ -386,6 +386,9 @@ section {
     color: #111111;
     display: block;
     transition: 0.3s;
+    border-bottom-width: 2px;
+    border-bottom-style: outset;
+    border-bottom-color: #e9e6e6;
 }
 
 .sidenav a:hover {
