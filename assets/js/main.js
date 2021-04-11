@@ -104,7 +104,7 @@
     }
 
     /**
-     * small screen nav toggle
+     * small screen side-nav
      */
     const openNav = () => select("#mySidenav").style.width = "250px";
     const closeNav = () => select("#mySidenav").style.width = "0";
@@ -115,10 +115,22 @@
     });
 
     on('click', '.sidenav .closebtn ', (e) => {
-        e.stopPropagation();
         select('#navbar').classList.toggle('side-nav');
         closeNav();
     });
+
+    /**
+     * Click anywhere to close the nav-bar
+     */
+    on("click", "body", (e) => {
+        if (e.target != select(".sidenav") && e.target != select(".mobile-nav-btn")) {
+            let navbar = select('#navbar')
+            if (navbar.classList.contains('side-nav')) {
+                navbar.classList.remove('side-nav');
+                closeNav();
+            }
+        }
+    })
 
     /**
      * Scrool with ofset on links with a class name .scrollto

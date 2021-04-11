@@ -630,6 +630,15 @@ section.tabs {
     transition: 2s ease;
 }
 
+@media (max-width:400px) {
+    .tabs .tab-pane h3 {
+        font-size: 22px;
+    }
+    .tabs .tab-pane p {
+        font-size: 18px;
+    }
+}
+
 @media (max-width: 1200px) {
     .tabs .tab-content div.side {
         height: 90%;
@@ -647,7 +656,7 @@ section.tabs {
 --------------------------------------------------------------*/
 
 .counts {
-    padding-top: 50px;
+    padding: 50px 0 0 50px;
 }
 
 .counts .count-box {
@@ -699,7 +708,7 @@ section.tabs {
 --------------------------------------------------------------*/
 
 div#dep {
-    padding-top: 55px;
+    padding: 50px 0 0 0;
 }
 
 .dep .dep-list li {
