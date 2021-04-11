@@ -72,6 +72,12 @@ section {
     color: #fff;
 }
 
+@media (min-width:500px) {
+    .breadcrumbs {
+        margin-top: 85px;
+    }
+}
+
 .breadcrumbs h2 {
     font-size: 28px;
     font-weight: 500;
@@ -115,7 +121,7 @@ section {
     background: #fff;
     transition: all 0.5s;
     z-index: 997;
-    padding: 10px 0;
+    padding: 10px 0 5px 0;
 }
 
 #header.header-scrolled {
@@ -244,7 +250,8 @@ section {
     position: relative;
 }
 
-.navbar a {
+.navbar a,
+.navbar a.home i {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -257,6 +264,10 @@ section {
     transition: 0.3s;
 }
 
+.navbar a.home i {
+    font-size: 30px;
+}
+
 .navbar a i {
     font-size: 12px;
     line-height: 0;
@@ -265,7 +276,8 @@ section {
 
 .navbar a:hover,
 .navbar .active,
-.navbar li:hover>a {
+.navbar li:hover>a,
+.navbar a+iconify-icon {
     color: #e03a3c;
 }
 
@@ -1132,3 +1144,8 @@ div.clubs {
     visibility: visible;
     opacity: 1;
 }
+
+
+/*****************************************************
+    InnerPage
+*****************************************************/
