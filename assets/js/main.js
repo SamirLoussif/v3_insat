@@ -1,7 +1,7 @@
 (function() {
 
     /**
-     * Easy selector helper function
+     * Easy selector  function
      */
     const select = (el, all = false) => {
         el = el.trim()
@@ -229,11 +229,7 @@
             il y a un probléme si on utilise un swiper dans un tab 
             donc on met le swiper en dehors de tab et on ajoute un listner pour l'afficher en cas de besoin
     *******/
-    select(".tabs li#tab4").addEventListener("click", () => select("div.clubs").style.display = "block");
-    select(".tabs li#tab1").addEventListener("click", () => select("div.clubs").style.display = "none");
-    select(".tabs li#tab2").addEventListener("click", () => select("div.clubs").style.display = "none");
-    select(".tabs li#tab3").addEventListener("click", () => select("div.clubs").style.display = "none");
-
-
+    on("click", ".tabs li#tab4", () => select("div.clubs").style.display = "block");
+    on("click", ".tabs .nav li:not(#tab4)", () => select("div.clubs").style.display = "none", true);
 
 })()
