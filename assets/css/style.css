@@ -130,25 +130,13 @@ section {
 }
 
 #header .logo {
-    font-size: 60px;
     margin: 0;
-    padding: 0;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-}
-
-#header .logo a {
-    color: #424141;
     padding: 0;
 }
 
 #header .logo img {
     max-height: 60px;
     padding-bottom: 10px;
-}
-
-#header .logo a span {
-    color: #830a0a;
 }
 
 #header .logo img#logo {
@@ -160,13 +148,6 @@ section {
         max-height: 40px;
         padding-bottom: 8px;
     }
-    #header .logo {
-        font-size: 40px;
-        margin: 0;
-        padding: 0;
-        font-weight: 600;
-        font-family: "Poppins", sans-serif;
-    }
     #header .logo img#logo {
         max-height: 50px;
     }
@@ -176,13 +157,6 @@ section {
     #header .logo img {
         max-height: 70px;
         padding-bottom: 12px;
-    }
-    #header .logo {
-        font-size: 75px;
-        margin: 0;
-        padding: 0;
-        font-weight: 600;
-        font-family: "Poppins", sans-serif;
     }
     #header .logo img#logo {
         max-height: 110px;
@@ -196,8 +170,7 @@ section {
 
 .log-in-btn {
     margin-left: 30px;
-    /*background: #e03a3c;*/
-    background: #af0202;
+    background: #e03a3c;
     color: #fff;
     border-radius: 4px;
     padding: 8px 25px;
@@ -215,7 +188,7 @@ section {
 
 @media (max-width: 992px) {
     .log-in-btn {
-        margin: 0 15px 0 0;
+        margin-right: 15px;
         padding: 6px 18px;
     }
 }
