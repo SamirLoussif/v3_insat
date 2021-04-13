@@ -539,7 +539,7 @@ section#welcome {
 --------------------------------------------------------------*/
 
 section.tabs {
-    padding: 45px 10px;
+    padding: 45px 10px 20px 10px;
 }
 
 .tabs .nav-tabs {
@@ -556,6 +556,7 @@ section.tabs {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    border-radius: 25px;
 }
 
 .tabs .nav-link i {
@@ -636,6 +637,7 @@ section.tabs {
 .tabs .tab-content #slideshow1 {
     max-height: 700px;
     max-width: 400px;
+    border-radius: 25px;
 }
 
 .tabs .tab-content #slideshow1 .carousel-item {
@@ -668,18 +670,16 @@ section.tabs {
 --------------------------------------------------------------*/
 
 .counts {
-    padding: 50px 0 0 50px;
+    padding-top: 15px;
 }
 
 .counts .count-box {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-bottom: 20px;
-    width: 40%;
+    padding: 35px 0;
+    margin-bottom: 35px;
     position: relative;
     text-align: center;
-    box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.06);
-    border-radius: 4px;
+    box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.13);
+    border-radius: 25px;
 }
 
 .counts .count-box i {
@@ -694,7 +694,7 @@ section.tabs {
     color: #e03a3c;
     border-radius: 50px;
     border: 2px solid #fff;
-    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.253);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -720,7 +720,7 @@ section.tabs {
 --------------------------------------------------------------*/
 
 div#dep {
-    padding: 50px 0 0 0;
+    padding: 55px 0 0 0;
 }
 
 .dep .dep-list li {
@@ -782,6 +782,7 @@ div#dep {
     height: 380px;
     width: 270px;
     position: relative;
+    border-radius: 25px;
 }
 
 .tabs .tab-content .zoomable:hover {
@@ -815,6 +816,7 @@ div#dep {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 25px;
 }
 
 
@@ -825,6 +827,7 @@ div#dep {
     display: block;
     width: 80%;
     max-width: 700px;
+    border-radius: 25px;
 }
 
 
@@ -918,7 +921,7 @@ div.clubs {
     font-size: 20px;
     color: #777777;
     font-weight: 700;
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
 .contact .info-box p {
@@ -980,7 +983,7 @@ div.clubs {
     position: relative;
     height: 350px;
     width: 95%;
-    margin: 10px;
+    margin: 0 10px;
 }
 
 .gmap_canvas {
@@ -1003,12 +1006,18 @@ div.clubs {
 }
 
 #footer .footer-top {
-    padding: 35px 0 25px 0;
+    padding: 25px 0 25px 110px;
     background: #1b1b1b;
 }
 
-#footer .footer-top .footer-contact {
-    margin-bottom: 30px;
+@media (max-width:768px) {
+    #footer .footer-top {
+        padding-left: 0px;
+    }
+}
+
+#footer .footer-top .footer-element {
+    margin-bottom: 20px;
 }
 
 #footer .footer-top .footer-contact h3 {
@@ -1044,10 +1053,6 @@ div.clubs {
     background: #e03a3c;
     bottom: 0;
     left: 0;
-}
-
-#footer .footer-top .footer-links {
-    margin-bottom: 30px;
 }
 
 #footer .footer-top .footer-links ul {
