@@ -1,7 +1,5 @@
-(function() {
-
     /**
-     * Easy selector  function
+     * Easy selector function
      */
     const select = (el, all = false) => {
         el = el.trim()
@@ -231,5 +229,3 @@
     *******/
     on("click", ".tabs li#tab4", () => select("div.clubs").style.display = "block");
     on("click", ".tabs .nav li:not(#tab4)", () => select("div.clubs").style.display = "none", true);
-
-})()

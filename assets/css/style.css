@@ -419,7 +419,7 @@ section#welcome {
 
 /*overlay*/
 
-#welcome .carousel-item:before {
+#welcome .carousel-item::before {
     content: "";
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
