@@ -26,31 +26,64 @@
 
 <body>
 
-    <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center">
         <div class="container d-flex align-items-center">
             <h1 class="logo me-auto">
-                <a href="index.html"><img id="logo" src="./assets/img/favicon.png" /> <img src="./assets/img/logo_v2.jpg">SAT </a>
+                <a href="index.html"><img id="logo" src="./assets/img/favicon.png" /> <img src="./assets/img/logo_v4.jpg"></a>
             </h1>
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="nav-link" href="index.html">Acceuil</a></li>
-                </ul>
-                </li>
+                    <li>
+                        <a class="nav-link home" href="./index.html">
+                            <i><iconify-icon data-icon="ant-design:home-filled"></iconify-icon></i>
+                        </a>
+                    </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-btn"></i>
                 <div id="mySidenav" class="sidenav">
                     <i class="closebtn"><iconify-icon data-icon="line-md:arrow-close-right"></iconify-icon></i>
-                    <a class="nav-link" href="#welcome">Acceuil</a>
+                    <a class="nav-link scrollto" href="#welcome">Acceuil</a>
                 </div>
             </nav>
             <!-- .navbar -->
 
-            <a href="#" class="log-in-btn scrollto">Log in</a>
+            <a href="#" class="log-in-btn scrollto" data-bs-toggle="modal" data-bs-target="#LogInModal">Se connecter</a>
         </div>
     </header>
     <!-- End Header -->
+
+    <!--===== Log in Modal ====-->
+    <div class="modal fade" id="LogInModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header">
+                    <h4 class="w-100 modal-title">
+                        <img src="./assets/img/favicon.png" class="w-100 "> Connexion
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3 form-group">
+                            <label for="mail-input" class="form-label">E-mail universitaire</label>
+                            <i><iconify-icon data-icon="fa:user"></iconify-icon></i>
+                            <input id="mail-input" type="email" class="form-control" placeholder="xyz@insat.u-carthage.tn" required>
+                        </div>
+                        <div class="mb-3 form-group">
+                            <label for="password-input" class="form-label">Mot de passe</label>
+                            <i><iconify-icon data-icon="fa:lock"></iconify-icon></i>
+                            <input type="password" class="form-control" id="password-input" placeholder="xxxxx" required>
+                        </div>
+                        <button type="submit" class="btn log-in-btn mx-auto d-block" href="#">Se connecter</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Mot de passe oublié ?</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <main id="main">
@@ -70,8 +103,8 @@
         <section class="inner-page">
             <div class="container" data-aos="fade-up">
                 <p>
-                    Les Actualités <br> Les Actualités <br> Les Actualités <br> Les Actualités <br> Les Actualités <br> Les Actualités <br> Les Actualités <br> Les Actualités <br> Les Actualités <br> Les Actualités <br> Les Actualités <br>
-
+                    Les Actualités <br> Les Actualités <br> Les Actualités <br> Les Actualités <br> Les Actualités <br> Les Actualités <br> Les Actualités <br> Les Actualités <br> Les Actualités <br> Les Actualités <br> Les Actualités <br> es Actualités
+                    <br> Les Actualités <br> Les Actualités <br> Lees Actualités <br> Les Actualités <br> Les Actualités <br> Lees Actualités <br> Les Actualités <br> Les Actualités <br> Le
                 </p>
             </div>
         </section>
