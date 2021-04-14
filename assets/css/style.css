@@ -195,7 +195,7 @@ section {
 
 @media (min-width:1400px) {
     .log-in-btn {
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 
@@ -323,7 +323,7 @@ section {
 }
 
 @media (min-width:1400px) {
-    .navbar a {
+    .navbar li a.nav-link {
         font-size: 27px;
     }
 }
@@ -459,16 +459,17 @@ section#welcome {
 }
 
 #welcome .btn-get-started:hover {
-    background: #e03a3c;
     border-color: #fff;
+    background: #e03a3c;
 }
 
 @media (min-width: 1400px) {
     #welcome .carousel-caption h1 {
         font-size: 55px;
     }
-    #welcome .carousel-caption .btn-get-started {
+    #welcome .btn-get-started {
         font-size: 25px;
+        border: 3px solid #e03a3c;
     }
 }
 
