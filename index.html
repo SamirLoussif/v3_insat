@@ -40,10 +40,10 @@
                     <li><a class="nav-link scrollto active" href="#welcome">Acceuil</a></li>
                     <li><a class="nav-link scrollto" href="#tabs">A propos</a></li>
                     <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                    <li class="dropdown"><a class="nav-link">More<i><iconify-icon data-icon="bi:chevron-down"></iconify-icon></i></a>
+                    <li class="dropdown"><a href="#"><span>More</span> <i><iconify-icon data-icon="bi:chevron-down"></iconify-icon></i></a>
                         <ul>
-                            <li><a class="nav-link" href="actualites.html">Les Actualités</a></li>
-                            <li><a class="nav-link" href="emplois-du-temps.html">Emplois du temps</a></li>
+                            <li><a href="actualites.html">Les Actualités</a></li>
+                            <li><a href="emplois-du-temps.html">Emplois du temps</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -59,8 +59,11 @@
             </nav>
             <!-- .navbar -->
 
-            <a href="#" class="log-in-btn scrollto">Log in</a>
-        </div>
+            <a  href="#" class="log-in-btn scrollto" data-bs-toggle="modal" data-bs-target="#exampleModal">Log in</a>
+        
+
+  
+  
     </header>
     <!-- End Header -->
 
@@ -305,9 +308,9 @@
                     <div class="tab-pane" id="tab-4">
                         <h3>La vie associative :</h3>
                         <br>
-                        <p> À l'INSAT l'étudiant aura non seulement la formation de l'ingénierie mais aussi une formation qui lui permet d’apprendre à vivre en société et d’acquérir la compétence de développer le savoir-faire et le savoir-être pour se préparer
-                            à l’insertion professionnelle.<br> En fait, derrière ses murs rouges vous pouvez mettre votre passion dans n'importe quel intérêt imaginable, de la musique et du théâtre à la robotique et aux services de communité grâce aux
-                            clubs et leurs activités :
+                        <p> À l'INSAT l'étudiant aura sa formation de l'ingenierie et il aura aussi une formation lui permettant d’apprendre à vivre en société et d’acquérir la compétence de développer le savoir-faire et le savoir-être pour se préparer à
+                            l’insertion professionnelle.<br> En fait, derrière ses murs rouges vous pouvez mettre votre passion dans n'importe quel intérêt imaginable, de la musique et du théâtre à la robotique et aux services de communité grâce aux clubs
+                            :
                         </p>
                     </div>
                 </div>
@@ -439,6 +442,34 @@
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
         <i><iconify-icon data-icon="bi:arrow-up-short"></iconify-icon></i>
     </a>
+   
+    <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+            <div class="col-6 mx-auto">
+                <img id="logo" src="./assets/img/favicon.png" class="center-block  logo-margin-negative w-100 center" >
+            </div>
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email universitaire</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="col-12"> <button type="button" class="btn log-in-btn" href="#">Log in</button></div>
+               
+              </form>
+            
+        </div>
+        
+      </div>
+    </div>
+  </div>
 
     <!-- EXTERNAL JS Files -->
     <script src="assets/external/aos/aos.js"></script>
