@@ -58,9 +58,39 @@
                 </div>
             </nav>
             <!-- .navbar -->
-
-            <a href="#" class="log-in-btn scrollto">Log in</a>
+              
+            <a  href="#" class="log-in-btn scrollto" data-bs-toggle="modal" data-bs-target="#exampleModal">Log in</a>
         </div>
+        
+           <!-- Modal -->
+        
+           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                
+                <div class="modal-body">
+                    <div class="col-6 mx-auto">
+                        <img id="logo" src="./assets/img/favicon.png" class="center-block  logo-margin-negative w-100 center" >
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email universitaire</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="col-12"> <button type="button" class="btn log-in-btn" href="#">Log in</button></div>
+                       
+                      </form>
+                    
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        
     </header>
     <!-- End Header -->
 
