@@ -163,13 +163,12 @@ section {
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
     #header .logo img {
         max-height: 70px;
-        padding-bottom: 12px;
     }
     #header .logo img#logo {
-        max-height: 110px;
+        max-height: 100px;
     }
 }
 
@@ -196,7 +195,7 @@ section {
     color: #fff;
 }
 
-@media (min-width:1400px) {
+@media (min-width:1600px) {
     header .log-in-btn {
         font-size: 20px;
     }
@@ -392,7 +391,7 @@ section {
     }
 }
 
-@media (min-width:1400px) {
+@media (min-width:1600px) {
     .navbar li a.nav-link {
         font-size: 27px;
     }
@@ -533,7 +532,7 @@ section#welcome {
     background: #e03a3c;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
     #welcome .carousel-caption h1 {
         font-size: 55px;
     }
