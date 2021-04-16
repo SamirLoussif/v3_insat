@@ -270,7 +270,7 @@ section {
 .navbar a:hover,
 .navbar .active,
 .navbar li:hover>a,
-.navbar a+iconify-icon {
+.navbar a.home i:hover {
     color: #e03a3c;
 }
 
@@ -888,6 +888,11 @@ div#dep {
 
 div.clubs {
     display: none;
+    cursor: grab;
+}
+
+div.clubs:active {
+    cursor: grabbing;
 }
 
 
