@@ -118,7 +118,7 @@
     });
 
     /**
-     * Click anywhere to close the nav-bar
+     * Click anywhere to close the side-nav-bar
      */
     on("click", "body", (e) => {
         if (e.target != select(".sidenav") && e.target != select(".mobile-nav-btn")) {

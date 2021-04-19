@@ -990,7 +990,7 @@ div.clubs:active {
 }
 
 #footer .footer-top {
-    padding: 25px 0 30px 200px;
+    padding: 25px 0 30px 160px;
     background: #1b1b1b;
 }
 
@@ -1089,14 +1089,20 @@ div.clubs:active {
     transition: 0.4s;
 }
 
-#footer .social-links a#fb:hover {
+#footer .social-links a.facebook:hover {
     background: #3b5998;
-    color: #fff;
 }
 
-#footer .social-links a#lin:hover {
-    background: #347eda;
-    color: #fff;
+#footer .social-links a.linkedin:hover {
+    background: #0077b5;
+}
+
+#footer .social-links a.twitter:hover {
+    background: #1DA1F2;
+}
+
+#footer .social-links a.instagram:hover {
+    background-image: url(../img/instagram.jpg);
 }
 
 
